@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #141414;
+  color: #eee;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 24px;
+  background: #000;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.search-form {
+  display: flex;
+  gap: 4px;
+}
+
+.search-form input {
+  padding: 6px;
+  border: none;
+}
+
+.search-form button {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#auth-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#auth-area button,
+#auth-area a {
+  cursor: pointer;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+}
+
+.avatar-nho {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ===== Hero banner (trang chủ) ===== */
+.hero {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #141414, transparent);
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Lưới danh sách phim ===== */
+.section {
+  padding: 16px 24px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.movie-card p {
+  font-size: 0.9rem;
+  margin: 4px 0;
+}
+
+/* ===== Trang chi tiết phim ===== */
+.info-container {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+
+.info-container img {
+  width: 250px;
+  border-radius: 8px;
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.cast-grid img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.cast-grid p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background: #e50914;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+/* ===== Trang xem trailer ===== */
+.watch-container {
+  padding: 24px;
+}
+
+.watch-container iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border: none;
+}
+
+.comment-item {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #333;
+  padding: 8px 0;
+}
+
+#comment-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  max-width: 500px;
+}
+
+#comment-input {
+  flex: 1;
+  padding: 8px;
+}
+
+/* ===== Form đăng nhập / đăng ký ===== */
+.auth-container {
+  max-width: 350px;
+  margin: 60px auto;
+  padding: 24px;
+  background: #1f1f1f;
+  border-radius: 8px;
+}
+
+.auth-container h2 {
+  margin-top: 0;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: none;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 16px;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-container p {
+  font-size: 0.9rem;
+}
+
+/* ===== Icon loading dùng chung ===== */
+.loading-icon {
+  width: 40px;
+  display: block;
+  margin: 40px auto;
+}

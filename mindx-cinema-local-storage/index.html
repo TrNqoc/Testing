@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MindX Cinema</title>
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">MindX Cinema</a>
+    <form action="search.html" method="get" class="search-form">
+      <input type="text" name="q" placeholder="Tìm phim...">
+      <button type="submit">Tìm</button>
+    </form>
+    <div id="auth-area"></div>
+  </nav>
+
+  <div class="hero" style="background-image: url('assets/hero-img.jpg')">
+    <h1>MindX Cinema</h1>
+  </div>
+
+  <div class="section">
+    <h2>Phim phổ biến</h2>
+    <img class="loading-icon" id="loading" src="assets/loading.svg" alt="Đang tải...">
+    <div class="movie-grid" id="movie-grid"></div>
+  </div>
+
+  <script src="scripts/config.js"></script>
+  <script src="scripts/home.js"></script>
+</body>
+
+</html>

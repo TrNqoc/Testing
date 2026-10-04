@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chi tiết phim - MindX Cinema</title>
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">MindX Cinema</a>
+    <form action="search.html" method="get" class="search-form">
+      <input type="text" name="q" placeholder="Tìm phim...">
+      <button type="submit">Tìm</button>
+    </form>
+    <div id="auth-area"></div>
+  </nav>
+
+  <div class="info-container">
+    <img id="poster" src="" alt="">
+    <div>
+      <h1 id="title"></h1>
+      <p id="release-date"></p>
+      <p id="genres"></p>
+      <p id="description"></p>
+      <a class="btn" id="watch-btn" href="#">▶ Xem trailer</a>
+
+      <h3>Diễn viên</h3>
+      <div class="cast-grid" id="cast-list"></div>
+    </div>
+  </div>
+
+  <script src="scripts/config.js"></script>
+  <script src="scripts/info.js"></script>
+</body>
+
+</html>
